@@ -31,6 +31,8 @@ SKILLS:
 - Providing this opening docstring with your name and date.
 - Providing an opening docstring with important information about the file.
 - Importing freely available code into a Python file.
+- Use pandas to read a CSV file into a DataFrame.
+- Using matplotlib to create a simple visualization.
 - Configuring a logger to record information as the file runs.
 - Declaring and using global constants for folder paths.
 - Defining a main function that "orchestrates" the project logic.
