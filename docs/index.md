@@ -16,6 +16,8 @@ a reproducible workflow.
 The project uses:
 
 - Python for application logic.
+- pandas for data handling
+- matplotlib for visualization
 - uv for Python and dependency management.
 - Git and GitHub for version control.
 - Logging for execution records.
@@ -54,8 +56,8 @@ anomaly detection, monitoring, and system assessment.
 
 ## Project Links
 
-- [GitHub Repository](https://github.com/denisecase/cintel-01-getting-started)
-- [Example Pipeline](https://github.com/denisecase/cintel-01-getting-started/blob/main/src/cintel/pipeline.py)
+- [GitHub Repository](https://github.com/itsanibose/cintel-01-used-car-sales)
+- [Example Pipeline](https://github.com/itsanibose/cintel-01-used-car-sales/blob/main/src/cintel/pipeline.py)
 
 ## Project Resources
 

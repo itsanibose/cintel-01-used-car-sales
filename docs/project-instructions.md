@@ -30,7 +30,7 @@ Review the example data, code, and results.
 Follow [Workflow C: Start New Project](https://denisecase.github.io/pro-analytics-02/workflow-c-start-new-project/).
 
 IMPORTANT: New repository name:
-**cintel-01-getting-started-custom**.
+**cintel-01-used-car-sales**.
 
 VERIFY: You have completed git add-commit-push to GitHub at least twice.
 
@@ -43,7 +43,7 @@ Follow [Workflow D: Apply Skills](https://denisecase.github.io/pro-analytics-02/
 Ensure your new custom project runs like the example.
 
 Verify that key files have been updated to use **your GitHub account** and
-the **new custom repository name**.
+the **cintel-01-used-car-sales**.
 
 ## E. Finalize Project
 
