@@ -11,17 +11,17 @@ cff-version: "1.2.0"
 message: "If using this project, please cite it as described in this file."
 type: software
 
-title: "cintel-01-getting-started"
-date-released: "2026-09-25"
+title: "cintel-01-used-car-sales"
+date-released: "2026-10-21"
 
 authors:
-  - family-names: Case
-    given-names: Denise M.
+  - family-names: Bose
+    given-names: Anindya
     orcid: "https://orcid.org/0000-0001-6165-7389"
     affiliation: "Northwest Missouri State University, USA"
 
-repository-code: "https://github.com/denisecase/cintel-01-getting-started"
-url: "https://github.com/denisecase/cintel-01-getting-started"
+repository-code: "https://github.com/itsanibose/cintel-01-used-car-sales"
+url: "https://github.com/itsanibose/cintel-01-used-car-sales"
 license: MIT
 
 abstract: |
@@ -38,6 +38,8 @@ keywords:
   - github
   - prek
   - python
+  - pandas
+  - matplotlib
   - ruff
   - ty
   - uv
