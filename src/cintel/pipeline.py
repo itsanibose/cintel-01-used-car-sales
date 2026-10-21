@@ -1,11 +1,12 @@
 """pipeline.py - Project script (example).
 
-Author: Your Name Here
-Date: 2026-mm-dd
+Author: Anindya Bose
+Date: 2026-10-21
 
 Purpose:
   Confirm your project environment is set up correctly.
   Run this script to see a log message in the terminal.
+  This file will import functions from other files in the project and call them.
 
 Run as a Module:
   uv run python -m cintel.pipeline
@@ -45,6 +46,9 @@ from pathlib import Path
 # Then, external dependencies (must be listed in pyproject.toml)
 from datafun_toolkit.logger import get_logger, log_header, log_path
 
+# Then, functions from our own project files
+from cintel.cars_sales import plot_sales_by_maker
+
 # === CONFIGURE LOGGER ===
 
 LOG: logging.Logger = get_logger("P1", level="DEBUG")
@@ -59,6 +63,9 @@ ROOT_DIR: Path = Path.cwd()
 DOCS_DIR: Path = ROOT_DIR / "docs"
 SOURCE_DIR: Path = ROOT_DIR / "src"
 CINTEL_DIR: Path = SOURCE_DIR / "cintel"
+
+
+
 
 # === DEFINE THE MAIN FUNCTION ===
 
@@ -125,9 +132,14 @@ def main() -> None:
     log_path(LOG, "CINTEL_DIR", CINTEL_DIR)
 
     # Log a custom message (change this to something meaningful for your project)
-    LOG.info("Hello World from Dr. Case!")
-
+    LOG.info("Car Sales Analysis!")
     LOG.info("========================")
+    # === CALL FUNCTION TO PLOT SALES BY MAKER ===
+    # Call the function plot_sales_by_maker() from the cars_sales.py file
+    # Pass in the number of top-selling makers to display
+    plot_sales_by_maker(top_n=5)
+
+    
     LOG.info("Pipeline executed successfully!")
     LOG.info("========================")
     LOG.info("END main()")

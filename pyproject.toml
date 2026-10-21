@@ -13,7 +13,7 @@
 # ============================================================
 
 [project]
-name = "cintel-01-getting-started"  # Usually matches repository name (use lowercase and dashes).
+name = "cintel-01-used-car-sales"  # Usually matches repository name (use lowercase and dashes).
 readme = "README.md"
 requires-python = ">=3.14"
 version = "0.1.0"
@@ -25,6 +25,8 @@ version = "0.1.0"
 dependencies = [
     # REQ: External packages used by the project code.
     "datafun-toolkit", # WHY: Provides professional Python utilities for privacy-preserving logging.
+    "pandas",          # WHY: Core data structures and data manipulation tools.
+    "matplotlib",      # WHY: Base plotting and data visualization library.
 ]
 
 # ============================================================

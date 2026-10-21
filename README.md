@@ -1,6 +1,8 @@
-# cintel-01-getting-started
+# cintel-01-used-car-sales
 
 [![Python 3.14](https://img.shields.io/badge/python-3.14%2B-blue?logo=python)](pyproject.toml)
+[![pandas](https://img.shields.io/badge/pandas-data_analysis-150458?logo=pandas)](https://pandas.pydata.org/)
+[![Matplotlib](https://img.shields.io/badge/Matplotlib-visualization-11557C?logo=plotly)](https://matplotlib.org/)
 [![CI](https://github.com/denisecase/cintel-01-getting-started/actions/workflows/ci-python-zensical.yml/badge.svg)](https://github.com/denisecase/cintel-01-getting-started/actions/workflows/ci-python-zensical.yml)
 [![Documentation](https://img.shields.io/badge/docs-site-blue?logo=github)](https://denisecase.github.io/cintel-01-getting-started/)
 
@@ -13,25 +15,24 @@
 
 ## Project Overview
 
-Author: Denise Case
+Author: Anindya Bose
 
-Date: 2026 October
+Date: 2026-10-21
 
 First project in the Continuous Intelligence course.
 
 The goal is to establish a working Python environment,
 explore a professional project structure,
 run a Python pipeline, and verify the project works.
+This project also uses a simple csv file and create a dataframe
+using pandas library and shows simple chart using matplotlib library
 
 The project is configured in
 [pyproject.toml](pyproject.toml).
 
 ## Data
 
-No input dataset is required for this project.
-
-Later modules introduce data files, analytical processing,
-and generated results.
+Yearly Used Car sales in the US, data is available in CSV format under data/ folder
 
 ## Approach
 
