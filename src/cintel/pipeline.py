@@ -1,7 +1,7 @@
 """pipeline.py - Project script (example).
 
 Author: Anindya Bose
-Date: 2026-10-21
+Date: 2026-10
 
 Purpose:
   Confirm your project environment is set up correctly.

@@ -1,11 +1,11 @@
 """cars_sales.py - This file contains data logic for the project.
 
 Author: Anindya Bose
-Date: 2026-10-21
+Date: 2026-10
 
 Purpose:
-    This file is part of the cintel-01-used-car-sales project. This will read a CSV file containing used car sales data 
-    in the United States. We will use pandas to analyze the data and matplotlib to visualize the results. 
+    This file is part of the cintel-01-used-car-sales project. This will read a CSV file containing used car sales data
+    in the United States. We will use pandas to analyze the data and matplotlib to visualize the results.
     The main focus will be to understand how different module functions work together to read, process, and visualize data.
 """
 
@@ -20,6 +20,7 @@ DATA_FILE: Path = ROOT_DIR / "data" / "used_car_sales.csv"
 
 
 # == DEFINE FUNCTION TO PLOT SALES BY MAKER ===
+
 
 def plot_sales_by_maker(top_n=5):
     """Plot count of sales by car maker.
