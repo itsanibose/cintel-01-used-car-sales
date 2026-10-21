@@ -3,8 +3,8 @@
 [![Python 3.14](https://img.shields.io/badge/python-3.14%2B-blue?logo=python)](pyproject.toml)
 [![pandas](https://img.shields.io/badge/pandas-data_analysis-150458?logo=pandas)](https://pandas.pydata.org/)
 [![Matplotlib](https://img.shields.io/badge/Matplotlib-visualization-11557C?logo=plotly)](https://matplotlib.org/)
-[![CI](https://github.com/denisecase/cintel-01-getting-started/actions/workflows/ci-python-zensical.yml/badge.svg)](https://github.com/denisecase/cintel-01-getting-started/actions/workflows/ci-python-zensical.yml)
-[![Documentation](https://img.shields.io/badge/docs-site-blue?logo=github)](https://denisecase.github.io/cintel-01-getting-started/)
+[![CI](https://github.com/itsanibose/cintel-01-used-car-sales/actions/workflows/ci-python-zensical.yml/badge.svg)](https://github.com/itsanibose/cintel-01-used-car-sales/actions/workflows/ci-python-zensical.yml)
+[![Documentation](https://img.shields.io/badge/docs-site-blue?logo=github)](https://itsanibose.github.io/cintel-01-used-car-sales/)
 
 [![uv managed](https://img.shields.io/badge/uv-managed-DE5FE9)](https://docs.astral.sh/uv/)
 [![ty type checked](https://img.shields.io/badge/ty-type_checked-2F80ED)](https://docs.astral.sh/ty/)
@@ -17,7 +17,7 @@
 
 Author: Anindya Bose
 
-Date: 2026-10-21
+Date: 2026-10
 
 First project in the Continuous Intelligence course.
 
@@ -61,7 +61,8 @@ uv run python -m cintel.pipeline
 
 ## Results
 
-Successful execution produces a terminal message:
+Upon successful execution, a bar chart displaying the top manufacturers of used cars sold in the United States will appear.
+After the chart is closed, the following message will be printed in the console.
 
 ```shell
 ========================
