@@ -65,8 +65,6 @@ SOURCE_DIR: Path = ROOT_DIR / "src"
 CINTEL_DIR: Path = SOURCE_DIR / "cintel"
 
 
-
-
 # === DEFINE THE MAIN FUNCTION ===
 
 
@@ -139,7 +137,6 @@ def main() -> None:
     # Pass in the number of top-selling makers to display
     plot_sales_by_maker(top_n=5)
 
-    
     LOG.info("Pipeline executed successfully!")
     LOG.info("========================")
     LOG.info("END main()")
