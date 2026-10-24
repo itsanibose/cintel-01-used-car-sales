@@ -61,8 +61,10 @@ uv run python -m cintel.pipeline
 
 ## Results
 
-Upon successful execution, a bar chart displaying the top manufacturers of used cars sold in the United States will appear.
-After the chart is closed, the following message will be printed in the console.
+Upon successful execution, a bar chart displaying the top manufacturers of used cars sold in
+the United States will be saved in the **`artifacts`** directory. Console will show time taken
+to generate the plot.
+
 
 ```shell
 ========================

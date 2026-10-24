@@ -17,6 +17,7 @@ import pandas as pd
 # === DECLARE GLOBAL CONSTANTS FOR FOLDER PATHS (directories) ===
 ROOT_DIR: Path = Path.cwd()
 DATA_FILE: Path = ROOT_DIR / "data" / "used_car_sales.csv"
+ARTIFACTS_DIR: Path = ROOT_DIR / "artifacts"
 
 
 # == DEFINE FUNCTION TO PLOT SALES BY MAKER ===
@@ -32,17 +33,20 @@ def plot_sales_by_maker(top_n=5):
     df_sales = pd.read_csv(DATA_FILE)
 
     # Count sales for each manufacturer (largest first).
-    maker_sales = df_sales.groupby("manufacturer").size().sort_values(ascending=False)
+    maker_sales = df_sales["manufacturer"].value_counts().reset_index(name="count")
+
+    # Output path for the plot
+    CHART_OUTPUT_PATH: Path = ARTIFACTS_DIR / "car_sales_by_maker.png"
 
     # Select top N manufacturers
     top_makers = maker_sales.head(top_n)
 
     # Create vertical bar chart
     plt.figure(figsize=(10, 6))
-    plt.bar(top_makers.index, top_makers.values, color="teal")
+    plt.bar(top_makers["manufacturer"], top_makers["count"], color="teal")
 
     plt.title(f"Top {top_n} Car Makers by Total Sales")
     plt.xlabel("Car Maker")
     plt.ylabel("Total Number of Sales")
     plt.tight_layout()
-    plt.show()
+    plt.savefig(CHART_OUTPUT_PATH)

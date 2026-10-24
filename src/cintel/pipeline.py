@@ -44,6 +44,7 @@ SKILLS:
 # First from the Python standard library (no installation needed)
 import logging
 from pathlib import Path
+import time
 
 # Then, external dependencies (must be listed in pyproject.toml)
 from datafun_toolkit.logger import get_logger, log_header, log_path
@@ -137,7 +138,15 @@ def main() -> None:
     # === CALL FUNCTION TO PLOT SALES BY MAKER ===
     # Call the function plot_sales_by_maker() from the cars_sales.py file
     # Pass in the number of top-selling makers to display
+
+    # Adding a timer to measure the execution time of the plot_sales_by_maker function
+    LOG.info("Starting plot_sales_by_maker")
+    LOG.info("Chart will be saved in the artifacts directory")
+    start_time = time.perf_counter()
     plot_sales_by_maker(top_n=5)
+    end_time = time.perf_counter()
+    execution_time = end_time - start_time
+    LOG.info(f"Execution time for plot_sales_by_maker: {execution_time:.4f} seconds")
 
     LOG.info("Pipeline executed successfully!")
     LOG.info("========================")
@@ -159,4 +168,4 @@ def main() -> None:
 # since this main function does not need any arguments
 # (additional information) calls main().
 if __name__ == "__main__":
-    main()
+    main()  # pragma: no cover
