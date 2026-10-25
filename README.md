@@ -115,7 +115,7 @@ With the project open in VS Code, open a VS Code terminal.
 Paste each command and hit Enter or Return after to run it.
 
 ```shell
-uvx pup-clean --delete
+uv pup-clean --delete
 uv self update
 uv python pin 3.14
 uv python install
@@ -134,13 +134,13 @@ In the VS Code terminal,
 paste each command and hit Enter or Return after to run it.
 
 ```shell
-uv run prek install --force
-uv run prek update --freeze --cooldown-days 7
+uv  prek install --force
+uv  prek update --freeze --cooldown-days 7
 
 git add -A
-uv run prek run --all-files
+uvx  prek run --all-files
 # repeat if changes were made
-uv run prek run --all-files
+uv  prek run --all-files
 ```
 
 ### Run Common Chores
