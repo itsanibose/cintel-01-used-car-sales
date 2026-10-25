@@ -29,6 +29,7 @@ dependencies = [
     "datafun-toolkit", # WHY: Provides professional Python utilities for privacy-preserving logging.
     "pandas",          # WHY: Core data structures and data manipulation tools.
     "matplotlib",      # WHY: Base plotting and data visualization library.
+    "pytest>=9.1.1",
 ]
 
 # ============================================================

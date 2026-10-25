@@ -134,13 +134,13 @@ In the VS Code terminal,
 paste each command and hit Enter or Return after to run it.
 
 ```shell
-uv  prek install --force
-uv  prek update --freeze --cooldown-days 7
+uvx  prek install --force
+uvx  prek update --freeze --cooldown-days 7
 
 git add -A
 uvx  prek run --all-files
 # repeat if changes were made
-uv  prek run --all-files
+uvx  prek run --all-files
 ```
 
 ### Run Common Chores
@@ -149,12 +149,12 @@ Run linters, formatters, type checks, tests, and
 build the documentation.
 
 ```shell
-uv run ruff check . --fix
-uv run ruff format .
+uvx  ruff check . --fix
+uvx  ruff format .
 
-uv run ty check
-uv run python -m pytest
-uv run python -m zensical build
+uvx  ty check
+uv   run python -m pytest
+uv   run python -m zensical build
 ```
 
 ### Git add-commit-push to GitHub

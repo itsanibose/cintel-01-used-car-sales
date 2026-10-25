@@ -24,6 +24,7 @@ dependencies = [
     { name = "datafun-toolkit" },
     { name = "matplotlib" },
     { name = "pandas" },
+    { name = "pytest" },
 ]
 
 [package.dev-dependencies]
@@ -43,6 +44,7 @@ requires-dist = [
     { name = "datafun-toolkit" },
     { name = "matplotlib" },
     { name = "pandas" },
+    { name = "pytest", specifier = ">=9.1.1" },
 ]
 
 [package.metadata.requires-dev]
